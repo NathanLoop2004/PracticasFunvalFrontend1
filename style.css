@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(34, 151, 197);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+.list{
+    list-style: none;
+    margin: 30px;
+}
+.card{
+    background-color: rgb(23, 84, 109);
+}
