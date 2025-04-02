@@ -26,7 +26,8 @@ li{
 .card{
     background-color: rgb(23, 84, 109);
     border-radius: 30px;
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    margin: 20px;
+    padding: 15px 10px;
     position: relative;
 }
