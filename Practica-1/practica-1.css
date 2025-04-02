@@ -1,0 +1,19 @@
+h1{
+    color: blue;
+    font-size: 40px;
+
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 360px;
+}
+h2{
+    color: rgb(57, 185, 224);
+}
+h3{
+    color: rgb(57, 185, 224);
+}
+a{
+    color: red;
+}

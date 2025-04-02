@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+/*Valores Generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color:hsl(30, 54%, 90%);
+font-family: "Young Serif", serif;
+
+}
+.container{
+background-color:hsl(0, 0%, 100%);
+width: 50%;
+margin: 80px auto ;
+padding: 50px;
+border-radius: 30px;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+}
+#omelet{
+border-radius: 30px;
+width: 100%;
+}
+.divisor-transparent{
+    background-color:transparent;
+    width: 90%;
+    height: 20px;
+    border: solid 1px transparent;
+}
+.divisor{
+    background-color: transparent;
+    width: 95%;
+    border: 1px solid rgba(87, 86, 86, 0.103);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ol-instructions{
+    padding-left: 50px;
+}
+
+
+/* Esto es preparation*/
+.conteiner-preparation{
+    border-radius: 30px;
+}
+#h3-preparation{
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 20px;
+}
+.nav-preparation{
+background-color: hsl(330, 100%, 98%);
+padding: 30px ;
+border-radius: 30px;
+}
+.ul-preparation {
+    padding-left: 50px;
+    color: hsl(332, 51%, 32%);
+}
+.ul-preparation li{
+    color: black;
+}
+/* Esto es Ingredients*/
+.ul-ingredients{
+    color:hsl(0, 0%, 0%);
+    padding-left: 30px;
+}
+#li-ingredients::marker{
+    color:hsl(14, 45%, 36%);
+}
+
+/*Esto es  Instructions*/
+.ol-instructions{
+    color: black;
+}
+#li-instructions::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+
+
+
+
+
+
+
+
+/*Esto es Nutrition*/
+.nutrition-chart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nutrition-chart p{
+    margin: 0;
+    padding-right:150px;
+    padding-left: 0px;
+}
+.color-diferent{
+padding-left: 100px;
+color: hsl(14, 45%, 36%);
+}
