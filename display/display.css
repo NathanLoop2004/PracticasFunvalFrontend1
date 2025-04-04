@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Display:flex */
+
+.container{
+    border: solid 2px red;
+    height: 100px;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+    /* Esto es en el eje x  */
+    justify-content: space-between;
+    /* Esto es en el eje y */
+    align-items: center;
+}
+
+.box{
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    border: solid 2px yellow;
+}
