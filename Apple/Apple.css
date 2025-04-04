@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Header */
+.header{
+    position: relative;
+}
+
+nav{
+    font-size: 15px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+    font-weight: 600;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav >a >img{
+    width: 24px;
+    height: 24px;
+    color: rgb(104, 100, 100);
+}
+
+
+
+/* Imagen de fondo debajo del header */
+
+/*Esta es la imagen */
+.section{
+    position: relative;
+}
+.content{
+    position: absolute;
+    right: 100px;
+}
+
+
+
+
+
+
+
+/* Debajo de la imagen */
+.Apple-img2{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    position: relative;
+}
+.Apple-img2 img{
+    width: 1100px;
+    height: 700px;
+    padding-top:20px;
+    position: absolute;
+}
