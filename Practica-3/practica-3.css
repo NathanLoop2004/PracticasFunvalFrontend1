@@ -21,6 +21,109 @@ header{
     color: white;
     text-align: center;
     width: 100%;
-    height: 60px;
+    height: 100px;
+}
+header h1{
+    padding-top: 40px;
+}
+section{
+    position: relative;
+    background-color: rgb(44, 44, 44);
+    
+}
+section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    padding: 30px;
+}
+#Home{
+    position: absolute;
+    left:100px;
+    top: 25px;
+}
+#About{
+    position: absolute;
+left: 30px;
+top: 25px;
+}
+#Contact{
+    position: absolute;
+ left:160px;
+ top: 25px;
+}
+.Hero-Section{
+    background-color: rgb(250, 233, 218);
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.Hero-Section h1{
+    position: absolute;
+    font-size: 50px;
+    padding-top: 80px;
+    padding-left: 30px;
 
+}
+.Hero-Section p{
+    position: absolute;
+    font-size: 25px;
+    padding-top:150px;
+    padding-left: 70px;
+}
+.bton{
+    position: absolute;
+    background-color: rgb(87, 202, 87);
+    border-radius: 30px;
+    padding: 30px;
+    color: white;
+    height: 200px;
+    height: 20px;
+    bottom: 450px;
+    right: 600px;
+padding-top: 15px;
+}
+.hero-image{
+    position: absolute;
+    height: 300px;
+    bottom: 150px;
+    right: 100px;
+}
+.section{
+position: relative;
+    height: 400px;
+}
+.section h1{
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.section div{
+    background-color: rgb(201, 198, 198);
+    padding: 30px;
+    border: solid 1px rgb(167, 166, 166);
+}
+.section div p{
+    font-size: 25px;
+
+}
+.section div ul{
+    padding-left: 35px;
+}
+.section div ul li{
+    font-size: 20px;
+}
+
+
+
+
+/*Footer*/
+footer{
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+    height: 100px;
+}
+footer h1{
+    padding-top:  30px;
+    padding-left: 300px;
 }
