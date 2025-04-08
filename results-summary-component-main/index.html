@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Young+Serif&display=swap');
+    </style>
+  <title>Frontend Mentor | Results summary component</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-{Hanken_Grotesk}">
+<div class="bg-gradient-to-b from-[#7857ff] to-[#2e2be9]  w-[375px] text-white h-80 rounded-b-[60px] flex flex-col  items-center pt-6 ">
+  <!-- parte de arriba Inicial-->
+  <section>
+  <h1 class="font-sans text-white text-[20px] pb-3">Your Result</h1>
+  </section>
+
+  <!-- Puntaje -->
+  <section>
+    <div class="bg-gradient-to-b from-[#4e21ca] from-10% to-[#2421ca00] to-80% h-35 w-35 rounded-full flex  items-center flex-col">
+   <span class="text-white font-sans text-[70px] flex-col-reverse flex items-center">76</span>
+  
+ <!--   Lo que faltaba-->
+ <span class="opacity-40 mt-[-15px]" >of 100</span> 
+  
+ </section>
+  <h2 class="text-2xl font-semibold mb-2">Great<h2>
+  <p class=" w-[70%] opacity-70 mx-auto text-center">You scored higher than 65% of the people who have taken these tests.</p>
+</div>
+
+<section class="px-8 py-7  w-[375px]">
+  <div> 
+  <h1 class="text-lg font-semibold text-[#303850]">Summary</h1>
+ </div>
+
+
+<div class="flex justify-between w-full mt-5">
+  <div class="flex justify-between gap-2 ">
+    <img src="./assets/images/icon-reaction.svg"alt="reaction"/>
+    <span class="text-[#ff5757] font-semibold">Reaction</span>
+  </div>
+  <div>
+    <p><strong>80</strong>/100</p>
+  </div>
+ </div>
+
+<div class="flex justify-between w-full mt-5">
+  <div class="flex justify-between gap-2">
+    <img src="./assets/images/icon-memory.svg" alt="memory">
+    <span class="text-[#ffb01f] font-semibold">Memory</span>
+  </div>
+  <div>
+    <p><strong>92</strong>/100</p>
+  </div>
+</div>
+
+
+<div class="flex justify-between w-full mt-5">
+  <div class="flex justify-between gap-2">
+    <img src="./assets/images/icon-verbal.svg" alt="verbal">
+    <span class="text-[#00bd91] font-semibold">Verbal</span>
+  </div>
+  <div>
+    <p><strong>61</strong>/100</p>
+  </div>
+</div>
+
+<div class="flex justify-between w-full mt-5">
+  <div class="flex justify-between gap-2">
+    <img src="./assets/images/icon-visual.svg" alt="visual">
+    <span class="text-[#1125d4] font-semibold">Visual</span>
+  </div>
+  <div>
+    <p><strong>72</strong>/100</p>
+  </div>
+</div>
+
+<div class="bg-slate-600 rounded-[30px] mt-8 p-2">
+  <p class="mx-auto w-[70%] text-center text-white">Continue</p>
+</div>
+
+</section> 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
