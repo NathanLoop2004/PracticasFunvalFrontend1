@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tailwind Responsive</title>
     <link rel="stylesheet" href="tailwind.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-  <h1 class="">ASD</h1>
-  <h2 class=""></h2>
-  <h2 class="text-blue-400 ">Azul</h2>
-  <h2 class="">Verde</h2>
-  <h2 class="">Amarillo</h2>
+<body class="h-screen">
+  <!-- Header -->
+<header class="border-4 border-red-500 h-[10%]">
+
+</header>
 
 
-  <div class="w-14 h-14 bg-red-500"></div>
-  <div class=""></div>
+<!-- Main -->
+<main class="border-4 border-blue-500 h-[70%] flex justify-center items-center 
+flex-col sm:flex-row md:flex-col sm:flex-wrap gap-3 md:items-start  md:px-10">
+
+<div class="h-[100px] sm:h-[40%]  w-[300px] md:w-1/2 md:h-[100px] bg-purple-500 border">1</div>
+<div class="h-[100px] sm:h-[40%]  w-[300px] md:w-1/2 md:h-[100px] bg-purple-500 border md:ml-auto">2</div>
+<div class="h-[100px] sm:h-[40%]  w-[300px] md:w-1/2 md:h-[100px] bg-purple-500 border">3</div>
+<div class="h-[100px] sm:h-[40%]  w-[300px] md:w-1/2 md:h-[100px] bg-purple-500 border md:ml-auto">4</div>
+
+</main>
+
+<!-- Footer -->
+<footer class="border-4 border-green-500 h-[20%]"></footer>
 </body>
 </html>
