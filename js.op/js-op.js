@@ -8,7 +8,7 @@ let codigoPIN = 0;
 // Bucle para verificar el PIN
 while (codigoPIN !== 1234) {
     // Actualizar el valor de codigoPIN
-    const entrada = prompt("Introduzca su Codigo PIN:  ");
+    const entrada = prompt("Numero de PIN:1234 Introduzca su Codigo PIN:  ");
     codigoPIN = parseInt(entrada);
 
     // Validar si la entrada no es un número
