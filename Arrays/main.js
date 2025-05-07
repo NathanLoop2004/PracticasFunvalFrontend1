@@ -109,4 +109,45 @@ let arrayRandom = [
 
 
 
+ let libros = [
+   {
+     titulo: "harry potter",
+     año: 2002,
+     autor: "JK ROWLING",
+   },
+   {
+     titulo: "jesus el cristo",
+     año: 1987,
+     autor: "Talmage James",
+   },
+   {
+     titulo: "la arrogancia fatal",
+     año: 1988,
+     autor: "Federick Haiek",
+   },
+ ];
+
+
+ function fetchLibros() {
+   return new Promise((resolve, reject) => {
+     let cumplio = true;
+     if (cumplio) {
+       setTimeout(() => {
+         resolve(libros);
+       }, 7000);
+     } else {
+       reject("los libros no pudieron ser extraidos ");
+     }
+   });
+ }
+
+async function DatosLibros() {
+   try{
+      let informacion = await fetchLibros()
+      
+   }
+   catch(error){
+      console.log(error)
+   }
+}
  
