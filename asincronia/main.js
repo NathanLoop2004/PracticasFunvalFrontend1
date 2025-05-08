@@ -5,8 +5,14 @@ function hola(nombre){
 }
 
 hola("kevin")
+*/
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function preprarEnsalada(frutas, accion){
     //Codigo que nos interesa realizar con las frutas
@@ -25,7 +31,7 @@ preprarEnsalada("Banana",pelar)
 
 
 //CALLBACKS
-
+/*
 function pedirHelado(tipoHelado, callback){
     let numerodeCaracteres = tipoHelado.length;
     console.log(numerodeCaracteres)
@@ -36,9 +42,9 @@ function helado(){
     console.log("este helado esta sabroso")
 }
 
-pedirHelado("helado")*/
+pedirHelado("helado")
 
-
+*/
 
 
 //Funciones Sincronas
@@ -97,14 +103,20 @@ function despertar(callback) {
       console.log("Llegué al colegio");
     }, 2000);
   }
+
+
   // Llamada en orden
+
+
   despertar(() => {
     desayunar(() => {
       irAlColegio();
     });
   });
   */
-/*
+
+
+  /*
   let superpromesa = new Promise((resolve, reject)=> {
     let ellaTeespero = false;
     if(ellaTeespero){
@@ -121,8 +133,8 @@ function despertar(callback) {
   })
   .catch((error)=> {
     console.log(error)
-  })*/
-
+  })
+*/
 
 
 /*
