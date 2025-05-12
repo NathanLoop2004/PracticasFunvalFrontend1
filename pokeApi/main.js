@@ -1,6 +1,10 @@
 
 let contenedor = document.querySelector("#card-container");
+//////////////////////////////////////////////////////////
 
+//taerPokemon() es para conseguir el id de la pagina
+
+///////////////////////////////////////////////////////
 function traerPokemon(id) {
   fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
     .then((response) => response.json())
@@ -8,12 +12,23 @@ function traerPokemon(id) {
       pintarPokemons(data);
     });
 }
+/////////////////////////////////////////////////////////////
 
+//traerPokemons() Esto itera el id del traerpokemon()
+
+///////////////////////////////////////////////
 function traerPokemons(numero) {
   for (let i = 1; i <= numero; i++) {
     traerPokemon(i);
   }
 }
+
+////////////////////////////////////////////////////////////////
+
+//pintarPokemons() esto crea la cards
+
+///////////////////////////////////////////
+
 
 function pintarPokemons(pokemon) {
   let tipospok = pokemon.types;
@@ -21,6 +36,7 @@ function pintarPokemons(pokemon) {
   tipospok.forEach((element) => {
     cadtipos += element.type.name + ",";
   });
+//Esto agrega y aparte lo guarda
   contenedor.innerHTML += `
 
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex items-center">
@@ -42,11 +58,71 @@ function pintarPokemons(pokemon) {
 </div>
 `;
 }
-
+// Esto hace que aparezca traerPokemons(i)
 traerPokemons(12);
+//////////////////////////////////////////////////////////////////////////////////////
+
+//Funcion total de todos los botones con axios
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.querySelector("#fuego").addEventListener("click", () => obtenerPokemonesPorTipo("fire"));
+document.querySelector("#Agua").addEventListener("click", () => obtenerPokemonesPorTipo("water"));
+document.querySelector("#planta").addEventListener("click", () => obtenerPokemonesPorTipo("grass"));
+document.querySelector("#electric").addEventListener("click", () => obtenerPokemonesPorTipo("electric"));
+document.querySelector("#fantasma").addEventListener("click", () => obtenerPokemonesPorTipo("ghost"));
+document.querySelector("#veneno").addEventListener("click", () => obtenerPokemonesPorTipo("poison"));
+
+
+ 
+
+ async function obtenerPokemonesPorTipo(tipo) {
+  try {
+    contenedor.innerHTML="";
+    const { data } = await axios.get(`https://pokeapi.co/api/v2/type/${tipo}`)
+    let arrayDePokemones = data.pokemon.slice(0, 12);
+    console.log(arrayDePokemones)
+   
+    arrayDePokemones.forEach((poke) => {
+      axios.get(poke.pokemon.url)
+     .then(mauricio => {
+      pintarPokemons(mauricio.data)
+     }) 
+    })
+  } catch (error) {
+    console.log("error al obtener los pokemon, ",error)
+  }
+ }
+
+
+
+/*
+ axios.get("https://pokeapi.co/api/v2/type/fire")
+ .then(respuesta => console.log(respuesta.data.pokemon)
+
+)
+
+axios.get("https://pokeapi.co/api/v2/type/fire")
+.then(respuesta => respuesta.data.pokemon.forEach(element =>
+  console.log(element.pokemon.url)
+)
+
+)
+*/
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+//Fuego
+
+////////////////////////////////////////////////////////////////////////////////////////
+/*
 
 let btnfuego = document.querySelector("#fuego");
-
+//Escuchador
 btnfuego.addEventListener("click", function (evento) {
   contenedor.innerHTML = "";
   fetch("https://pokeapi.co/api/v2/type/fire")
@@ -62,7 +138,7 @@ btnfuego.addEventListener("click", function (evento) {
       });
     });
 });
-
+//filtrado
 function tipopokemonfuego(pokemon) {
   let poketipo = pokemon.types;
   poketipo.forEach((t) => {
@@ -80,6 +156,7 @@ function tipopokemonfuego(pokemon) {
 
 
 let btnAgua = document.querySelector("#Agua");
+
 
 
 //Escuchador
@@ -262,4 +339,4 @@ function tipopokemonAgua(pokemon) {
         pintarPokemons(pokemon);
       }
     });
-  }
+  }*/
